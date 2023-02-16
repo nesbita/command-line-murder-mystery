@@ -1,0 +1,53 @@
+// look at first hint
+Cat hint1 
+
+// check files
+Ls
+
+// enter mystery folder
+Cd mystery
+
+// search for first 20 people as directed
+head -n 20 people
+
+// exit mystery folder
+Cd ..
+
+// look at hint 2
+Cat hint2
+
+// enter master folder
+Cd mystery
+
+// search for clues in crimescene
+Grep “CLUE” crimescene
+
+// search for Annabel in people
+grep Annabel people 
+
+// target specific line and street for first Annabel 
+head -n 173 streets/Mattapan_Street | tail -n 1
+
+// enter and list interviews 
+Cd interviews
+Ls interviews
+
+// see associated interview
+Cat interview-9437737
+
+// repeat steps to access interviews for other two addresses
+
+// return to next hint (7)
+
+// in the mystery folder, find the license plates that match what was given and return the 5 lines that come after it
+ grep -A 5 L337 mystery/vehicles
+
+// return to hint 8
+
+// enter mystery folder then memberships and  look at the which of the people have memberships to each of the given places
+Cat AAA Delta_Skymiles Museum_of_Bash_History
+
+// search to see if matching person has library membership
+grep Jeremy Bowers library.txt
+
+Conclusion:  Jeremy Bowers is the suspect.
